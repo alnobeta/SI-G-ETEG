@@ -173,7 +173,7 @@ Although you can use them, for a more unique website, replace these images with 
             $pesanErr = $_COOKIE['pesanErr'];
         }
         else{
-            $pesanErr = "";
+            $pesanErr = "asdasdasda";
         }
     ?>
     <!-- Navigation -->

@@ -1,5 +1,5 @@
 <?php
-	$namahost = "ap-cdbr-azure-southeast-b.cloudapp.net";
+	$namahost = "ap-cdbr-azure-east-c.cloudapp.net";
 	$user = "pembeli";
 	$password = "pembeli";
 	$database = "sigetek";

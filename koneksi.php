@@ -2,7 +2,7 @@
 	include 'prosescekform.php';
 
 	if ($_SESSION["username"] == 'admin') {
-		$namahost = "localhost";
+		$namahost = "ap-cdbr-azure-southeast-b.cloudapp.net";
 		$user = "admin";
 		$password = "admin";
 		$database = "sigetek";
@@ -10,7 +10,7 @@
 		mysql_select_db($database) or die("Database not exist");
 	}
 	elseif ($_COOKIE['jenisuser'] == 'Customer') {
-		$namahost = "localhost";
+		$namahost = "ap-cdbr-azure-southeast-b.cloudapp.net";
 		$user = "pembeli";
 		$password = "pembeli";
 		$database = "sigetek";
@@ -18,7 +18,7 @@
 		mysql_select_db($database) or die("Database not exist");
 	}
 	elseif ($_COOKIE['jenisuser'] == 'Pedagang'){
-		$namahost = "localhost";
+		$namahost = "ap-cdbr-azure-southeast-b.cloudapp.net";
 		$user = "penjual";
 		$password = "penjual";
 		$database = "sigetek";

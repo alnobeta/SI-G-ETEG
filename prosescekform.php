@@ -132,16 +132,16 @@
             header("location:admin.php");
          }
          elseif ($q == 1) {
-            setcookie("jenisuser","Customer");
+            setcookie("orderan", $rand);
             $q1 = mysql_fetch_array(mysql_query("SELECT id_jenis_pembeli FROM pembeli WHERE username = '$username'"));
             if ($q1['id_jenis_pembeli'] == 1) {
                $rand = rand(111111, 999999);
-               setcookie("orderan", $rand);
+               setcookie("jenisuser","Customer");
                header("location:pembeliharian.php");
             }
             else{
                $rand = rand(111111, 999999);
-               setcookie("orderan", $rand);
+                setcookie("jenisuser","Customer");
                header("location:pembelibulanan.php");
             }
          }

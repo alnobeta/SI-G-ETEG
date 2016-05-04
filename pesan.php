@@ -22,12 +22,12 @@
 
 	if ($hitungStok < 0) {
 		setcookie("pesanErr", " Stok Tidak Tersedia Untuk Pemesanan Sebanyak $banyak kg", time()+3);
-		header("location:$url#popup");
+		header("location:$fix#popup");
 	}
 	else{
 		$ins = mysql_query("INSERT INTO pemesanan(id_pembeli,id_produk,nomor_pemesanan,nama_produk,banyak,total_harga) VALUES('".$idpembeli."','".$id."','".$nomor."','".$q1['nama_produk']."','".$banyak."','".$totalHarga."')");
 		if ($ins) {
-			header("location:$url");
+			header("location:$fix");
 		}
 		else{
 			mysql_error();

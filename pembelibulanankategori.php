@@ -9,7 +9,7 @@ Although you can use them, for a more unique website, replace these images with 
 
         $username = $_SESSION['username'];
         $getid = $_GET['id'];
-       // $urlaktif = apache_getenv("REQUEST_URI");
+           $urlaktif = $_SERVER['REQUEST_URI'];
         $q = mysql_query("SELECT * FROM kategori");
 
         $sql = mysql_query("SELECT * FROM pembeli WHERE username = '$username'");

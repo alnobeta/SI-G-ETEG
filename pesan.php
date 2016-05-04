@@ -31,7 +31,7 @@
 			header("location:$url");
 		}
 		else{
-		header("location:$url");
+			echo mysql_error();
 			
 		}
 	}

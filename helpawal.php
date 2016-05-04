@@ -155,7 +155,7 @@ Although you can use them, for a more unique website, replace these images with 
         <!-- Copyright etc -->
         <div class="small-print">
             <div class="container">
-                <p>Copyright &copy; SI G-ETEK 2015</p>
+                <p>Copyright &copy; SI G-ETEK 2016</p>
             </div>
         </div>
         

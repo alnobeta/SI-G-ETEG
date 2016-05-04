@@ -26,13 +26,13 @@
 	else{
 		$ins = mysql_query("INSERT INTO pemesanan(id_pembeli,id_produk,nomor_pemesanan,nama_produk,banyak,total_harga) VALUES('".$idpembeli."','".$id."','".$nomor."','".$q1['nama_produk']."','".$banyak."','".$totalHarga."')");
 		echo $ins;
-		/*if ($ins) {
+if ($ins) {
 			echo "sini";
 			header("location:$url");
 		}
 		else{
-			mysql_error();
-			echo "eror";
-		}*/
+		echo	mysql_error();
+			
+	
 	}
 ?>

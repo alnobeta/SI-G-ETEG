@@ -22,10 +22,10 @@
 
 	$totalHarga = $banyak * $q1['harga'];
 	$catatan_transaksi = $banyak . " Kg " . $q1['nama_produk'];
-
+echo "ha";
 	$ins = mysql_query("INSERT INTO jadwal_distribusi(id_pembeli,id_penjual,id_produk,banyak,total_harga,jadwal_distribusi) VALUES('".$idpembeli."','".$q1['id_penjual']."','".$id."','".$banyak."','".$totalHarga."','".$tanggal."')");
 	$sp = mysql_query("CALL catat_transaksi('".$namalengkap."','".$jenis_pembeli."','".$catatan_transaksi."','".$tanggal."','".$waktu."')");
-
+echo "ho";
 	if ($ins && $sp) {
 		mysql_query("COMMIT;");
 		header("location:$url");
@@ -34,5 +34,6 @@
 	else{
 		mysql_query("ROLLBACK;");
 		echo mysql_error();
+		echo "error";
 	}
 ?>

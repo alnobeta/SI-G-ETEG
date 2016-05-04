@@ -11,7 +11,7 @@
 	$banyak = $_POST['banyak'];
 	$nomor = $_COOKIE['orderan'];
 	$url = $_POST['urlaktif'];
-	echo $nomor;
+	echo $nomor,$id,$banyak,$url;
 	
 
 	$q1 = mysql_fetch_array(mysql_query("SELECT * FROM produk pr JOIN penjual p ON pr.id_penjual = p.id_penjual JOIN kategori k ON pr.id_kategori = k.id_kategori WHERE pr.id_produk = '$id'"));

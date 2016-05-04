@@ -366,7 +366,7 @@ Although you can use them, for a more unique website, replace these images with 
                     <label for="banyak"><p style="margin-left:65px; margin-bottom:-11px;">Banyaknya</p></label>
                     <input type="text" name="banyak" placeholder="Kg." required><br>
                     <input type="hidden" name="idpesanan" value="<?php echo $idb; ?>">
-                    <input type="text" name="orderan" value="<?php  $_COOKIE['orderan']; ?>">
+               
                     <input type="hidden" name="urlaktif" value="<?php echo $fix; ?>">
                     <input type="submit" name="pesan" value="PESAN">
                 </div>

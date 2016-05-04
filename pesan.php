@@ -25,7 +25,7 @@
 	}
 	else{
 		$ins = mysql_query("INSERT INTO pemesanan(id_pembeli,id_produk,nomor_pemesanan,nama_produk,banyak,total_harga) VALUES('".$idpembeli."','".$id."','".$nomor."','".$q1['nama_produk']."','".$banyak."','".$totalHarga."')");
-		echo $ins;
+			echo "lewat";
 if ($ins) {
 			echo "sini";
 			header("location:$url");

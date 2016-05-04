@@ -159,7 +159,7 @@ Although you can use them, for a more unique website, replace these images with 
                         <a href="#popup">LOGIN</a>
                     </li>
                     <li>
-                        <a href="helpawal.php">HELP ME PLEASE</a>
+                        <a href="helpawal.php">HELP</a>
                     </li>
                 </ul>
             </div><!-- /.navbar-collapse -->

@@ -3,6 +3,7 @@
     if(isset($_GET['image_id'])) {
         $sql = "SELECT * FROM produk WHERE id_produk=" . $_GET['image_id'];
 		$result = mysql_query("$sql")
+		echo "tes";
         	$row = mysql_fetch_array($result);
 		//header("Content-type: " . $row["imageType"]);
         echo $row["gambar_produk"];

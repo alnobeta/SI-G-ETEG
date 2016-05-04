@@ -13,7 +13,7 @@
 	$web= "http://g-eteg.azurewebsites.net";
 	$url = $_POST['urlaktif'];
 	$fix = $web.$url;
-	echo $fix;
+
 
 	$q1 = mysql_fetch_array(mysql_query("SELECT * FROM produk pr JOIN penjual p ON pr.id_penjual = p.id_penjual JOIN kategori k ON pr.id_kategori = k.id_kategori WHERE pr.id_produk = '$id'"));
 

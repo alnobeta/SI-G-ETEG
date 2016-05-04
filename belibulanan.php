@@ -15,7 +15,6 @@
 	$id = $_POST['idpesanan'];
 	$banyak = $_POST['stok'];
 	$tanggal = $_POST['tanggal'];
-	$nomor = $_COOKIE['orderan'];
 	$waktu = date("y-m-d H:i:s");
 	$url = $_POST['urlaktif'];
 
@@ -25,7 +24,7 @@
 	$catatan_transaksi = $banyak . " Kg " . $q1['nama_produk'];
 
 	$ins = mysql_query("INSERT INTO jadwal_distribusi(id_pembeli,id_penjual,id_produk,banyak,total_harga,jadwal_distribusi) VALUES('".$idpembeli."','".$q1['id_penjual']."','".$id."','".$banyak."','".$totalHarga."','".$tanggal."')");
-	$sp = mysql_query("CALL catat_transaksi('".$nomor."','".$namalengkap."','".$jenis_pembeli."','".$catatan_transaksi."','".$tanggal."','".$waktu."')");
+	$sp = mysql_query("CALL catat_transaksi('".$namalengkap."','".$jenis_pembeli."','".$catatan_transaksi."','".$tanggal."','".$waktu."')");
 
 	if ($ins && $sp) {
 		mysql_query("COMMIT;");

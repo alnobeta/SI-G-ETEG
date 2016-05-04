@@ -10,6 +10,7 @@ Although you can use them, for a more unique website, replace these images with 
 
         $username = $_SESSION['username'];
      $urlaktif = $_SERVER['REQUEST_URI'];
+     echo $urlaktif;
  
         $q = mysql_query("SELECT * FROM kategori");
 

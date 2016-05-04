@@ -8,7 +8,7 @@ Although you can use them, for a more unique website, replace these images with 
         include 'koneksi.php';
 
         $username = $_SESSION['username'];
-        //$urlaktif = apache_getenv("REQUEST_URI");
+            $urlaktif = $_SERVER['REQUEST_URI'];
         $getid = $_GET['id'];
         $q = mysql_query("SELECT * FROM kategori");
 

@@ -10,6 +10,8 @@ Although you can use them, for a more unique website, replace these images with 
         $username = $_SESSION['username'];
            $urlaktif = $_SERVER['REQUEST_URI'];
         $q = mysql_query("SELECT * FROM kategori");
+          $web= "http://g-eteg.azurewebsites.net";
+      $fix= $web.$urlaktif;
 
         $sql = mysql_query("SELECT * FROM pembeli WHERE username = '$username'");
 
@@ -309,7 +311,7 @@ Although you can use them, for a more unique website, replace these images with 
                     </div>
                 </div>
                 <input type="hidden" name="idpesanan" value="<?php echo $idb; ?>">
-                <input type="hidden" name="urlaktif" value="<?php echo $urlaktif; ?>">
+                <input type="hidden" name="urlaktif" value="<?php echo $fix; ?>">
                 <input style="margin-top:px;" type="submit" name="pesan" value="PESAN">
                 <a class="popup-close" href="pembelibulanan.php">X</a>
             </form>

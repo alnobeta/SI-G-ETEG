@@ -11,7 +11,7 @@ Although you can use them, for a more unique website, replace these images with 
         $username = $_SESSION['username'];
      //$urlaktif = apache_getenv("REQUEST_URI");
         $q = mysql_query("SELECT * FROM kategori");
-echo "tes";
+
         $sql = mysql_query("SELECT * FROM pembeli WHERE username = '$username'");
 
         while ($nama = mysql_fetch_array($sql)) {

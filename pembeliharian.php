@@ -225,6 +225,7 @@ Although you can use them, for a more unique website, replace these images with 
                                                 $idgambar = $datapemesanan['id_produk'];
                                                 $idpemesanan = $datapemesanan['id_pemesanan'];
                                                 $totalHarga += $datapemesanan['total_harga'];
+                                                echo $idgambar;
                                                 echo "<tr style=\"height:60px;\">";
                                                 echo "<td style=\"border-bottom:2px; solid #bcbcbc;\">";
                                                 echo "&nbsp;&nbsp;";

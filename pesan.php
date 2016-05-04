@@ -10,7 +10,7 @@
 	$id = $_POST['idpesanan'];
 	$banyak = $_POST['banyak'];
 	$url = $_POST['urlaktif'];
-	echo $nomor,$id,$banyak,$url;
+
 	
 
 	$q1 = mysql_fetch_array(mysql_query("SELECT * FROM produk pr JOIN penjual p ON pr.id_penjual = p.id_penjual JOIN kategori k ON pr.id_kategori = k.id_kategori WHERE pr.id_produk = '$id'"));

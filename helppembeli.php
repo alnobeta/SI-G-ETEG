@@ -270,7 +270,7 @@ Although you can use them, for a more unique website, replace these images with 
     <footer class="page-footer">
         <!-- Copyright etc -->
         <div class="small-print">
-            <p>Copyright &copy; SI G-ETEK 2015</p>
+            <p>Copyright &copy; SI G-ETEK 2016</p>
         </div>
     </footer>
 

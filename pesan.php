@@ -9,7 +9,6 @@
 
 	$id = $_POST['idpesanan'];
 	$banyak = $_POST['banyak'];
-	$nomor = $_COOKIE['orderan'];
 	$url = $_POST['urlaktif'];
 	echo $nomor,$id,$banyak,$url;
 	
@@ -24,7 +23,7 @@
 		header("location:$url#popup");
 	}
 	else{
-		$ins = mysql_query("INSERT INTO pemesanan(id_pembeli,id_produk,nomor_pemesanan,nama_produk,banyak,total_harga) VALUES('".$idpembeli."','".$id."','".$nomor."','".$q1['nama_produk']."','".$banyak."','".$totalHarga."')");
+		$ins = mysql_query("INSERT INTO pemesanan(id_pembeli,id_produk,nama_produk,banyak,total_harga) VALUES('".$idpembeli."','".$id."','".$q1['nama_produk']."','".$banyak."','".$totalHarga."')");
 			
 		if ($ins) {
 			echo "sini";

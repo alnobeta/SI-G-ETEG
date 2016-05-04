@@ -10,7 +10,7 @@
 	$id = $_POST['idpesanan'];
 	$banyak = $_POST['banyak'];
 	$nomor = $_COOKIE['orderan'];
-	$web= "http://g-eteg.azurewebsites.net/";
+	$web= "http://g-eteg.azurewebsites.net";
 	$url = $_POST['urlaktif'];
 	$fix = $web.$url;
 	echo $fix;

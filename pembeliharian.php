@@ -10,7 +10,8 @@ Although you can use them, for a more unique website, replace these images with 
 
         $username = $_SESSION['username'];
      $urlaktif = $_SERVER['REQUEST_URI'];
-    
+      $web= "http://g-eteg.azurewebsites.net";
+      $fix= $web.$urlaktif;
  
         $q = mysql_query("SELECT * FROM kategori");
 
@@ -365,7 +366,7 @@ Although you can use them, for a more unique website, replace these images with 
                     <label for="banyak"><p style="margin-left:65px; margin-bottom:-11px;">Banyaknya</p></label>
                     <input type="text" name="banyak" placeholder="Kg." required><br>
                     <input type="hidden" name="idpesanan" value="<?php echo $idb; ?>">
-                    <input type="hidden" name="urlaktif" value="<?php echo $urlaktif; ?>">
+                    <input type="hidden" name="urlaktif" value="<?php echo $fix; ?>">
                     <input type="submit" name="pesan" value="PESAN">
                 </div>
                 <a class="popup-close" href="pembeliharian.php">X</a>
